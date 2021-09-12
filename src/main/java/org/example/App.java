@@ -16,7 +16,7 @@ public class App
     App ask = new App();
     int month = ask.number();
     String m = ask.string(month);
-       out.println(String.format("%s",m));
+       out.println(String.format("The name of the month is %s",m));
     }
     private String string(int month){
         switch (month){
@@ -33,7 +33,7 @@ public class App
             case 11: return "November";
             case 12: return "December";
     }
-    return "invalid number entered";
+    return "Invalid number entered";
     }
     private int number(){
         out.print("Please enter the number of the month: ");
